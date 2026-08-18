@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@theme {
+  --color-pactual-blue: #0EA0F8;
+  --color-pactual-institutional: #0E5E97;
+  --color-pactual-navy: #103D66;
+  --color-pactual-slate: #64748B; /* tailwind slate-500 */
+  --color-pactual-graphite: #0D131C;
+  --color-pactual-ice: #F8F9FA; 
+
+  --background-image-pactual-gradient: linear-gradient(180deg, #FFFFFF 0%, #F8F9FA 100%);
+  
+  --animate-marquee: marquee 30s linear infinite;
+
+  @keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); } /* -50% because we duplicate the array once, meaning the total width is 2x the content */
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: #FFFFFF;
+    color: var(--color-pactual-graphite);
+  }
+}
