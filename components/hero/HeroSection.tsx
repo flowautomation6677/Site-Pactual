@@ -1,6 +1,7 @@
 import InteractiveConversionForm from "./InteractiveConversionForm";
 import { ShieldCheck, Star, Users } from "lucide-react";
 import Image from "next/image";
+import ProtectedCar from "@/components/3d/ProtectedCar";
 
 export default function HeroSection() {
   return (
@@ -18,9 +19,9 @@ export default function HeroSection() {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="lg:grid lg:grid-cols-12 lg:gap-8 items-center">
+        <div className="lg:grid lg:grid-cols-12 lg:gap-8 items-center relative">
           
-          <div className="text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left mb-12 lg:mb-0">
+          <div className="text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left mb-12 lg:mb-0 relative z-20">
             <div className="inline-flex items-center justify-center lg:justify-start gap-2 px-4 py-1.5 rounded-full bg-green-50 text-green-700 text-xs sm:text-sm font-bold mb-6 border border-green-200 shadow-sm">
               <ShieldCheck className="w-4 h-4" />
               Associação regulamentada • LC 15.040/2024
@@ -34,7 +35,7 @@ export default function HeroSection() {
             </p>
           </div>
           
-          <div className="lg:col-span-6 relative">
+          <div className="lg:col-span-6 relative z-20">
             <InteractiveConversionForm />
             
             <div className="mt-8 flex flex-wrap items-center justify-center lg:justify-start gap-4 sm:gap-6 text-slate-600 text-sm font-medium">
@@ -52,6 +53,9 @@ export default function HeroSection() {
               </div>
             </div>
           </div>
+          
+          {/* 3D Car floating in the right corner */}
+          <ProtectedCar />
 
         </div>
       </div>

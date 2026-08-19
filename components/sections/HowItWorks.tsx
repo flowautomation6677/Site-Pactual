@@ -1,9 +1,6 @@
 import Image from "next/image";
-import dynamic from "next/dynamic";
 import { Reveal } from "@/components/Reveal";
-
-// Dynamic import with ssr: false for GSAP component
-const StepsLine = dynamic(() => import("@/components/ui/StepsLine"), { ssr: false });
+import StepsLine from "@/components/ui/StepsLine";
 
 export default function HowItWorks() {
   const steps = [

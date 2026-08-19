@@ -134,6 +134,7 @@ export default function PricingPlans() {
                   </p>
                 </div>
               </div>
+              </div>
             </Reveal>
           ))}
         </div>
