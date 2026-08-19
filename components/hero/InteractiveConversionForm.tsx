@@ -76,26 +76,6 @@ export default function InteractiveConversionForm() {
             className="space-y-5"
           >
             <div>
-              <div className="block text-sm font-semibold text-pactual-navy mb-2">
-                Tipo de Veículo
-              </div>
-              <div className="grid grid-cols-3 gap-2 mb-5">
-                {['Carro', 'Moto', 'Aplicativo'].map((tipo) => (
-                  <button
-                    key={tipo}
-                    type="button"
-                    onClick={() => setLeadData({ ...leadData, tipoVeiculo: tipo })}
-                    className={`py-2 px-1 text-xs sm:text-sm font-semibold rounded-lg border transition-all ${
-                      leadData.tipoVeiculo === tipo
-                        ? 'bg-pactual-blue border-pactual-blue text-pactual-graphite shadow-md'
-                        : 'bg-white border-pactual-slate/30 text-pactual-navy hover:border-pactual-blue/50'
-                    }`}
-                  >
-                    {tipo}
-                  </button>
-                ))}
-              </div>
-
               <label htmlFor="placa" className="block text-sm font-semibold text-pactual-navy mb-2">
                 Placa do Veículo
               </label>
@@ -114,7 +94,7 @@ export default function InteractiveConversionForm() {
               type="submit"
               className="w-full flex items-center justify-center py-4 px-4 rounded-lg text-base font-bold text-white bg-pactual-blue hover:bg-pactual-institutional transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pactual-blue shadow-md"
             >
-              Quero Minha Cotação Grátis <span className="ml-2">➔</span>
+              Cotar Agora <span className="ml-2">➔</span>
             </button>
           </motion.form>
         )}
@@ -127,11 +107,33 @@ export default function InteractiveConversionForm() {
             animate="visible"
             exit="exit"
             onSubmit={handleFinalSubmission}
-            className="space-y-5"
+            className="space-y-4"
           >
             <div>
-              <label htmlFor="nome" className="block text-sm font-semibold text-pactual-navy mb-2">
-                Seu Nome Completo
+              <div className="block text-sm font-semibold text-pactual-navy mb-2">
+                Tipo de Veículo
+              </div>
+              <div className="grid grid-cols-3 gap-2 mb-2">
+                {['Carro', 'Moto', 'Aplicativo'].map((tipo) => (
+                  <button
+                    key={tipo}
+                    type="button"
+                    onClick={() => setLeadData({ ...leadData, tipoVeiculo: tipo })}
+                    className={`py-2 px-1 text-xs sm:text-sm font-semibold rounded-lg border transition-all ${
+                      leadData.tipoVeiculo === tipo
+                        ? 'bg-pactual-blue border-pactual-blue text-pactual-graphite shadow-md'
+                        : 'bg-white border-pactual-slate/30 text-pactual-navy hover:border-pactual-blue/50'
+                    }`}
+                  >
+                    {tipo}
+                  </button>
+                ))}
+              </div>
+            </div>
+            
+            <div>
+              <label htmlFor="nome" className="block text-sm font-semibold text-pactual-navy mb-1">
+                Seu Nome
               </label>
               <input
                 id="nome"
@@ -140,7 +142,7 @@ export default function InteractiveConversionForm() {
                 required
                 value={leadData.nome}
                 onChange={handleInputChange}
-                className="w-full px-4 py-3.5 rounded-lg border border-pactual-slate/30 focus:ring-2 focus:ring-pactual-blue focus:border-pactual-blue transition-all text-pactual-graphite"
+                className="w-full px-4 py-3 rounded-lg border border-pactual-slate/30 focus:ring-2 focus:ring-pactual-blue focus:border-pactual-blue transition-all text-pactual-graphite"
               />
             </div>
             <div>
