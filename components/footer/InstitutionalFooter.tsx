@@ -19,7 +19,7 @@ export default function InstitutionalFooter() {
           <div className="md:col-span-4 lg:col-span-5">
             <Link href="/" className="inline-block mb-6">
               <Image 
-                src="/images/logos/logo-horizontal-normal.png" 
+                src="/teste/images/logos/logo-horizontal-normal.png" 
                 alt="Pactual Associação de Benefícios Mútuos" 
                 width={160} 
                 height={50} 
@@ -103,7 +103,7 @@ export default function InstitutionalFooter() {
 
               <div className="mt-6 flex items-center gap-4 p-4 bg-white rounded-xl border border-slate-200 shadow-sm">
                 <Image 
-                  src="/images/selo-aaapv.png" 
+                  src="/teste/images/selo-aaapv.png" 
                   alt="Selo de Filiação AAAPV" 
                   width={50} 
                   height={50} 

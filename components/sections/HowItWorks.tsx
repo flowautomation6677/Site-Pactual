@@ -58,7 +58,7 @@ export default function HowItWorks() {
           
           <div className="order-1 lg:order-2 relative aspect-square md:aspect-[4/3] lg:aspect-square w-full rounded-2xl overflow-hidden shadow-xl border border-slate-200">
             <Image 
-              src="/images/vistoria.jpg" 
+              src="/teste/images/vistoria.jpg" 
               alt="Vistoria Digital pelo Celular" 
               fill
               className="object-cover"

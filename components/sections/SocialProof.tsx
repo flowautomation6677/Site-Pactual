@@ -92,7 +92,7 @@ export default function SocialProof() {
               
               <video 
                 ref={videoRef}
-                src="/videos/recuperacao.mp4" 
+                src="/teste/videos/recuperacao.mp4" 
                 controls={isPlaying} 
                 className="w-full h-full object-cover rounded-[32px]"
                 preload="metadata"

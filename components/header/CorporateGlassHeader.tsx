@@ -28,7 +28,7 @@ export default function CorporateGlassHeader() {
         <div className="flex items-center gap-10">
           <Link href="/">
             <Image 
-              src="/images/logos/logo-horizontal-normal.png" 
+              src="/teste/images/logos/logo-horizontal-normal.png" 
               alt="Pactual Associação de Benefícios Mútuos" 
               width={140} 
               height={40} 

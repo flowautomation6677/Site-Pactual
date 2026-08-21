@@ -45,7 +45,7 @@ export default function InteractiveConversionForm() {
   };
 
   return (
-    <div className="bg-pactual-ice rounded-2xl shadow-2xl overflow-hidden p-6 sm:p-8 border border-white/40 max-w-md w-full mx-auto relative min-h-[350px]">
+    <div className="bg-pactual-ice rounded-2xl shadow-2xl overflow-hidden p-6 sm:p-8 border border-white/40 max-w-md w-full mx-auto lg:mx-0 relative min-h-[350px]">
       <div className="absolute top-0 left-0 right-0 h-2 bg-pactual-slate/20">
         <motion.div
           className="h-full bg-pactual-blue"

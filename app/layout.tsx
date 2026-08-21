@@ -15,6 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://clinicamedicafenix.com.br"),
   title: "Pactual Proteção Veicular | Preço Justo e Sem Burocracia",
   description: "Há mais de 15 anos protegendo famílias e veículos comerciais. Proteção completa, preço justo, sem análise de SPC/Serasa e com assistência 24 horas por dia.",
   keywords: ["proteção veicular", "seguro de carro", "seguro auto", "associação pactual", "proteção para aplicativo", "seguro de moto", "proteção de caminhão", "nova iguaçu", "rio de janeiro"],
@@ -60,8 +61,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       lang="pt-BR"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col font-sans bg-white text-pactual-graphite">
+      <body suppressHydrationWarning className="min-h-full flex flex-col font-sans bg-white text-pactual-graphite">
         {children}
+        <Script src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js" type="module" strategy="lazyOnload" />
       </body>
     </html>
   );
