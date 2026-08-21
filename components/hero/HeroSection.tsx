@@ -7,7 +7,7 @@ import ProtectedCar from "@/components/3d/ProtectedCar";
 
 export default function HeroSection() {
   return (
-    <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 bg-slate-50 overflow-hidden">
+    <section className="relative pt-32 pb-20 lg:pt-32 lg:pb-20 xl:pt-40 xl:pb-28 bg-slate-50 overflow-hidden">
       {/* Video Background */}
       <div className="absolute inset-0 z-0 overflow-hidden">
         <video 
@@ -28,7 +28,7 @@ export default function HeroSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="lg:grid lg:grid-cols-12 lg:gap-12 items-center relative">
           
-          <div className="text-center md:max-w-2xl md:mx-auto lg:col-span-8 lg:text-left mb-12 lg:mb-0 relative z-20 flex flex-col">
+          <div className="text-center md:max-w-2xl md:mx-auto lg:mx-0 lg:col-span-7 xl:col-span-7 lg:text-left mb-12 lg:mb-0 relative z-20 flex flex-col">
             <div className="inline-flex items-center justify-center lg:justify-start gap-2 px-4 py-1.5 rounded-full bg-green-50 text-green-700 text-xs sm:text-sm font-bold mb-6 border border-green-200 shadow-sm w-fit mx-auto lg:mx-0">
               <ShieldCheck className="w-4 h-4" />
               Associação regulamentada • LC 15.040/2024
