@@ -1,5 +1,4 @@
-"use client";
-import { TypeAnimation } from 'react-type-animation';
+import HeroTypeAnimation from "./HeroTypeAnimation";
 import InteractiveConversionForm from "./InteractiveConversionForm";
 import { ShieldCheck, Star, Users } from "lucide-react";
 import Image from "next/image";
@@ -38,20 +37,7 @@ export default function HeroSection() {
             
             <h1 className="text-4xl tracking-tight font-extrabold text-white sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl leading-[1.1] drop-shadow-md">
               Se tem Pactual,<br className="hidden sm:block" />{" "}
-              <TypeAnimation
-                sequence={[
-                  'tá tranquilo',
-                  2000,
-                  'tá seguro',
-                  2000,
-                  'tá protegido',
-                  2000,
-                ]}
-                wrapper="span"
-                speed={50}
-                className="text-blue-600 md:text-blue-400"
-                repeat={Infinity}
-              />
+              <HeroTypeAnimation />
             </h1>
             <p className="mt-6 mb-10 text-base text-slate-200 sm:text-xl lg:text-lg xl:text-xl leading-relaxed drop-shadow-sm">
               Há mais de 15 anos protegendo famílias e veículos comerciais. <strong>Preço justo, sem análise de crédito e atendimento humano 24h.</strong>

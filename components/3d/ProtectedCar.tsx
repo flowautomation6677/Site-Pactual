@@ -1,5 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
+import Script from "next/script";
 
 export default function ProtectedCar() {
   const [mounted, setMounted] = useState(false);
@@ -12,6 +13,7 @@ export default function ProtectedCar() {
 
   return (
     <div className="w-full h-full flex items-center justify-center min-h-[400px]">
+      <Script src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js" type="module" strategy="lazyOnload" />
       {/* @ts-expect-error - model-viewer is a web component */}
       <model-viewer
         src="/teste/models/mercedes.glb"
