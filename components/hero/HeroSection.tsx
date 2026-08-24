@@ -7,7 +7,8 @@ import ProtectedCar from "@/components/3d/ProtectedCar";
 
 export default function HeroSection() {
   return (
-    <section className="relative pt-32 pb-20 lg:pt-32 lg:pb-20 xl:pt-40 xl:pb-28 bg-slate-50 overflow-hidden">
+    <>
+      <section className="relative pt-32 pb-20 lg:pt-32 lg:pb-20 xl:pt-40 xl:pb-28 bg-slate-50 overflow-hidden">
       {/* Video Background */}
       <div className="absolute inset-0 z-0 overflow-hidden">
         <video 
@@ -18,11 +19,12 @@ export default function HeroSection() {
           poster="/teste/Energy_shield_poster.jpg"
           className="absolute inset-0 w-full h-full object-cover"
         >
+          <source src="/teste/Energy_shield_9-16.mp4" type="video/mp4" media="(max-width: 768px)" />
           <source src="/teste/Energy_shield.mp4" type="video/mp4" />
           <source src="/teste/assets/video/hero-loop.webm" type="video/webm" />
         </video>
         {/* Subtle dark gradient overlay for text contrast */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/20 to-transparent md:via-black/30"></div>
+        <div className="absolute inset-0 bg-black/50 md:bg-transparent md:bg-gradient-to-r md:from-black/60 md:via-black/30 md:to-transparent"></div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -47,7 +49,7 @@ export default function HeroSection() {
                 ]}
                 wrapper="span"
                 speed={50}
-                className="text-blue-400"
+                className="text-blue-600 md:text-blue-400"
                 repeat={Infinity}
               />
             </h1>
@@ -55,7 +57,7 @@ export default function HeroSection() {
               Há mais de 15 anos protegendo famílias e veículos comerciais. <strong>Preço justo, sem análise de crédito e atendimento humano 24h.</strong>
             </p>
 
-            <div className="w-full">
+            <div className="w-full hidden md:block">
               <InteractiveConversionForm />
             </div>
             
@@ -90,6 +92,14 @@ export default function HeroSection() {
           <rect width="404" height="784" fill="url(#pattern-hero)" />
         </svg>
       </div>
-    </section>
+      </section>
+
+      {/* Mobile Form Section (Visible only on screens <= 768px) */}
+      <section className="block md:hidden bg-slate-50 px-4 sm:px-6 py-8 relative z-20">
+        <div className="w-full max-w-md mx-auto">
+          <InteractiveConversionForm />
+        </div>
+      </section>
+    </>
   );
 }
