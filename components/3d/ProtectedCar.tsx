@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import React, { useEffect, useState } from "react";
 import Script from "next/script";
 
@@ -16,7 +16,7 @@ export default function ProtectedCar() {
       <Script src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js" type="module" strategy="lazyOnload" />
       {/* @ts-expect-error - model-viewer is a web component */}
       <model-viewer
-        src="/teste/models/mercedes.glb"
+        src="/models/mercedes.glb"
         alt="Carro protegido pela Pactual, em 3D"
         auto-rotate
         rotation-per-second="12deg"
@@ -32,3 +32,4 @@ export default function ProtectedCar() {
     </div>
   );
 }
+

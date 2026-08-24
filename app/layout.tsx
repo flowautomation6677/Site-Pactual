@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
@@ -62,7 +62,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <head>
-        <link rel="preload" as="image" href="/teste/Energy_shield_poster.jpg" fetchPriority="high" />
+        <link rel="preload" as="image" href="/Energy_shield_poster.jpg" fetchPriority="high" />
       </head>
       <body suppressHydrationWarning className="min-h-full flex flex-col font-sans bg-white text-pactual-graphite">
         {children}
@@ -70,3 +70,4 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     </html>
   );
 }
+

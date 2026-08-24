@@ -1,4 +1,4 @@
-import Image from "next/image";
+﻿import Image from "next/image";
 import { Reveal } from "@/components/Reveal";
 import StepsLine from "@/components/ui/StepsLine";
 
@@ -26,7 +26,7 @@ export default function HowItWorks() {
             Como funciona a contratação?
           </h2>
           <p className="mt-4 text-lg text-slate-600 max-w-2xl mx-auto">
-            Processo 100% online, sem burocracia e sem enrolação. Do primeiro clique à proteção ativada em minutos.
+            Processo 100% online, sem burocracia e sem enrolação. Do primeiro clique Ã  proteção ativada em minutos.
           </p>
         </div>
 
@@ -58,7 +58,7 @@ export default function HowItWorks() {
           
           <div className="order-1 lg:order-2 relative aspect-square md:aspect-[4/3] lg:aspect-square w-full rounded-2xl overflow-hidden shadow-xl border border-slate-200">
             <Image 
-              src="/teste/images/vistoria.jpg" 
+              src="/images/vistoria.jpg" 
               alt="Vistoria Digital pelo Celular" 
               fill
               className="object-cover"
@@ -69,3 +69,4 @@ export default function HowItWorks() {
     </section>
   );
 }
+

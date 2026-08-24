@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import Image from "next/image";
 import Tilt from "react-parallax-tilt";
 
@@ -15,7 +15,7 @@ export default function ProtectedCarImage() {
       >
         <div className="relative w-full aspect-video rounded-3xl overflow-hidden shadow-[0_0_60px_rgba(74,144,226,0.3)] border border-white/20">
           <Image 
-            src="/teste/images/carro-escudo.webp" 
+            src="/images/carro-escudo.webp" 
             alt="Carro com escudo de força translúcido"
             fill
             className="object-cover"
@@ -26,3 +26,4 @@ export default function ProtectedCarImage() {
     </div>
   );
 }
+

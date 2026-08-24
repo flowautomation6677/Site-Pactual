@@ -1,4 +1,4 @@
-import HeroTypeAnimation from "./HeroTypeAnimation";
+﻿import HeroTypeAnimation from "./HeroTypeAnimation";
 import InteractiveConversionForm from "./InteractiveConversionForm";
 import { ShieldCheck, Star, Users } from "lucide-react";
 import Image from "next/image";
@@ -15,12 +15,12 @@ export default function HeroSection() {
           muted 
           loop 
           playsInline 
-          poster="/teste/Energy_shield_poster.jpg"
+          poster="/Energy_shield_poster.jpg"
           className="absolute inset-0 w-full h-full object-cover"
         >
-          <source src="/teste/Energy_shield_9-16.mp4" type="video/mp4" media="(max-width: 768px)" />
-          <source src="/teste/Energy_shield.mp4" type="video/mp4" />
-          <source src="/teste/assets/video/hero-loop.webm" type="video/webm" />
+          <source src="/Energy_shield_9-16.mp4" type="video/mp4" media="(max-width: 768px)" />
+          <source src="/Energy_shield.mp4" type="video/mp4" />
+          <source src="/assets/video/hero-loop.webm" type="video/webm" />
         </video>
         {/* Subtle dark gradient overlay for text contrast */}
         <div className="absolute inset-0 bg-black/50 md:bg-transparent md:bg-gradient-to-r md:from-black/60 md:via-black/30 md:to-transparent"></div>
@@ -89,3 +89,4 @@ export default function HeroSection() {
     </>
   );
 }
+

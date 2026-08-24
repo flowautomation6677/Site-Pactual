@@ -1,13 +1,13 @@
-import VideoScrollScrubber from "../canvas/VideoScrollScrubber";
+﻿import VideoScrollScrubber from "../canvas/VideoScrollScrubber";
 import Link from "next/link";
 
 export default function ScrollStoryVideo() {
   return (
     <div className="relative w-full text-white overflow-hidden">
       <VideoScrollScrubber 
-        desktopSrc="/teste/videos/video_original.mp4" 
-        mobileSrc="/teste/videos/video_original.mp4" 
-        poster="/teste/Energy_shield_poster.jpg" 
+        desktopSrc="/videos/video_original.mp4" 
+        mobileSrc="/videos/video_original.mp4" 
+        poster="/Energy_shield_poster.jpg" 
       />
       
       {/* 1. A Base (0s - 2s) */}
@@ -63,3 +63,4 @@ export default function ScrollStoryVideo() {
     </div>
   );
 }
+

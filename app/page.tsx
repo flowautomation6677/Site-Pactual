@@ -26,8 +26,8 @@ export default function Jornada4Page() {
         <ScrollStoryFrames 
           frameCount={70}
           startIndex={1}
-          imagePrefix="/teste/frames_7fps/frame_"
-          mobileImagePrefix="/teste/frames_7fps_9x16/frame_"
+          imagePrefix="/frames_7fps/frame_"
+          mobileImagePrefix="/frames_7fps_9x16/frame_"
           mobileBreakpoint={768}
           imageExtension=".webp"
           padLength={3}

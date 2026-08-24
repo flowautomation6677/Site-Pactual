@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import Link from "next/link";
 import Image from "next/image";
 import { pushToDataLayer } from "@/lib/analytics";
@@ -19,7 +19,7 @@ export default function InstitutionalFooter() {
           <div className="md:col-span-4 lg:col-span-5">
             <Link href="/" className="inline-block mb-6">
               <Image 
-                src="/teste/images/logos/logo-horizontal-normal.png" 
+                src="/images/logos/logo-horizontal-normal.png" 
                 alt="Pactual Associação de Benefícios Mútuos" 
                 width={160} 
                 height={50} 
@@ -90,7 +90,7 @@ export default function InstitutionalFooter() {
             <h4 className="text-pactual-graphite font-bold mb-5">Transparência e Credibilidade</h4>
             <div className="text-slate-600 text-xs space-y-3 leading-relaxed">
               <p>
-                <strong>Razão Social:</strong> PACTUAL ASSOCIAÇÃO DE BENEFÍCIOS MÚTUOS
+                <strong>Razão Social:</strong> PACTUAL ASSOCIAÃ‡ÃƒO DE BENEFÍCIOS MÃšTUOS
               </p>
               <p>
                 <strong>CNPJ:</strong> 27.038.749/0001-84
@@ -103,14 +103,14 @@ export default function InstitutionalFooter() {
 
               <div className="mt-6 flex items-center gap-4 p-4 bg-white rounded-xl border border-slate-200 shadow-sm">
                 <Image 
-                  src="/teste/images/selo-aaapv.png" 
+                  src="/images/selo-aaapv.png" 
                   alt="Selo de Filiação AAAPV" 
                   width={50} 
                   height={50} 
                   className="object-contain"
                 />
                 <div>
-                  <p className="font-bold text-pactual-graphite text-sm">Filiada à AAAPV</p>
+                  <p className="font-bold text-pactual-graphite text-sm">Filiada Ã  AAAPV</p>
                   <p className="text-[10px] text-slate-500 mt-0.5 leading-tight">Agência de Autorregulamentação das Associações de Proteção Veicular</p>
                 </div>
               </div>
@@ -134,3 +134,4 @@ export default function InstitutionalFooter() {
     </footer>
   );
 }
+

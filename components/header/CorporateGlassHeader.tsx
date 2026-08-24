@@ -28,7 +28,7 @@ export default function CorporateGlassHeader() {
         <div className="flex items-center gap-10">
           <Link href="/">
             <Image 
-              src="/teste/images/logos/logo-horizontal-normal.png" 
+              src={isScrolledState ? "/images/logos/logo-horizontal-normal.png" : "/images/logos/logo-horizontal-white.png"} 
               alt="Pactual Associação de Benefícios Mútuos" 
               width={140} 
               height={40} 
@@ -37,11 +37,11 @@ export default function CorporateGlassHeader() {
             />
           </Link>
           
-          <nav className="hidden lg:flex items-center gap-6 text-sm font-semibold text-slate-600">
-            <Link href="#como-funciona" className="hover:text-pactual-graphite transition-colors">Como Funciona</Link>
-            <Link href="#coberturas" className="hover:text-pactual-graphite transition-colors">Coberturas</Link>
-            <Link href="#depoimentos" className="hover:text-pactual-graphite transition-colors">Depoimentos</Link>
-            <Link href="#faq" className="hover:text-pactual-graphite transition-colors">FAQ</Link>
+          <nav className={`hidden lg:flex items-center gap-6 text-sm font-semibold transition-colors duration-300 ${isScrolledState ? 'text-slate-600' : 'text-white'}`}>
+            <Link href="#como-funciona" className="hover:opacity-80 transition-opacity">Como Funciona</Link>
+            <Link href="#coberturas" className="hover:opacity-80 transition-opacity">Coberturas</Link>
+            <Link href="#depoimentos" className="hover:opacity-80 transition-opacity">Depoimentos</Link>
+            <Link href="#faq" className="hover:opacity-80 transition-opacity">FAQ</Link>
           </nav>
         </div>
 
@@ -58,7 +58,11 @@ export default function CorporateGlassHeader() {
 
           <Link
             href="#cota-agora"
-            className="inline-flex items-center justify-center px-4 py-2 sm:px-5 sm:py-2.5 rounded-lg text-sm font-bold text-pactual-blue bg-pactual-blue/10 hover:bg-pactual-blue/20 transition-all focus:outline-none"
+            className={`inline-flex items-center justify-center px-4 py-2 sm:px-5 sm:py-2.5 rounded-lg text-sm font-bold transition-all focus:outline-none ${
+              isScrolledState
+                ? "text-pactual-blue bg-pactual-blue/10 hover:bg-pactual-blue/20"
+                : "text-white bg-white/20 hover:bg-white/30"
+            }`}
           >
             Falar no WhatsApp
           </Link>
@@ -67,3 +71,4 @@ export default function CorporateGlassHeader() {
     </motion.header>
   );
 }
+

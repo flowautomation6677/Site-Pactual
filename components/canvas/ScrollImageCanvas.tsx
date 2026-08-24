@@ -15,7 +15,7 @@ interface ScrollImageCanvasProps {
 export default function ScrollImageCanvas({
   frameCount = 102,
   startIndex = 0,
-  imagePrefix = "/teste/Imagens_Scrool_Mouse/frame_",
+  imagePrefix = "/Imagens_Scrool_Mouse/frame_",
   mobileImagePrefix,
   mobileBreakpoint = 768,
   imageExtension = ".webp",
@@ -203,5 +203,6 @@ export default function ScrollImageCanvas({
     </div>
   );
 }
+
 
 

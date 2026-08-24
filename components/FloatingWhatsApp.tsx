@@ -44,7 +44,7 @@ export default function FloatingWhatsApp() {
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
           onClick={handleClick}
-          className="fixed bottom-6 right-6 z-50 flex items-center justify-center w-14 h-14 bg-green-500 text-white rounded-full shadow-2xl hover:bg-green-600 transition-colors"
+          className="fixed bottom-6 right-6 z-50 hidden md:flex items-center justify-center w-14 h-14 bg-green-500 text-white rounded-full shadow-2xl hover:bg-green-600 transition-colors"
           aria-label="Falar pelo WhatsApp"
         >
           <WhatsAppIcon className="w-8 h-8 ml-0.5" />

@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import { useEffect, useRef, useState } from "react";
 import { CheckCheck, Shield, Play } from "lucide-react";
 
@@ -55,7 +55,7 @@ export default function SocialProof() {
           <div className="flex-1 space-y-6">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-50 text-pactual-blue font-semibold text-sm border border-blue-100">
               <Shield className="w-4 h-4" />
-              HISTÓRIA REAL
+              HISTÃ“RIA REAL
             </div>
             
             <h3 className="text-3xl md:text-5xl font-extrabold text-pactual-graphite leading-tight">
@@ -92,7 +92,7 @@ export default function SocialProof() {
               
               <video 
                 ref={videoRef}
-                src="/teste/videos/recuperacao.mp4" 
+                src="/videos/recuperacao.mp4" 
                 controls={isPlaying} 
                 className="w-full h-full object-cover rounded-[32px]"
                 preload="metadata"
@@ -132,7 +132,7 @@ export default function SocialProof() {
             {
               name: "Arnaldo Crispim",
               location: "Nova Iguaçu / RJ",
-              text: "Me envolvi em um acidente quando um caminhão colidiu com meu veículo, e ao acionar a PACTUAL Abm pode contar com uma assistência que foi fundamental na resolução do meu problema. Tem Pactual? É bom ter.",
+              text: "Me envolvi em um acidente quando um caminhão colidiu com meu veículo, e ao acionar a PACTUAL Abm pode contar com uma assistência que foi fundamental na resolução do meu problema. Tem Pactual? Ã‰ bom ter.",
               image: "/images/testimonials/arnaldo.jpg"
             },
             {
@@ -172,3 +172,4 @@ export default function SocialProof() {
     </section>
   );
 }
+
