@@ -1,9 +1,9 @@
-import CorporateGlassHeader from "@/components/header/CorporateGlassHeader";
+﻿import CorporateGlassHeader from "@/components/header/CorporateGlassHeader";
 import HeroSection from "@/components/hero/HeroSection";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 import dynamic from "next/dynamic";
 
-// Abaixo da dobra: Lazy load forçado para não bloquear o FCP/LCP
+// Abaixo da dobra: Lazy load forÃ§ado para nÃ£o bloquear o FCP/LCP
 const VehicleSelector = dynamic(() => import("@/components/sections/VehicleSelector"), { ssr: true });
 const BenefitsBar = dynamic(() => import("@/components/sections/BenefitsBar"), { ssr: true });
 const ComparisonTable = dynamic(() => import("@/components/sections/ComparisonTable"), { ssr: true });
@@ -14,7 +14,7 @@ const RiskSection = dynamic(() => import("@/components/sections/RiskSection"), {
 const PricingPlans = dynamic(() => import("@/components/sections/PricingPlans"), { ssr: true });
 const PartnersSection = dynamic(() => import("@/components/sections/PartnersSection"), { ssr: true });
 const InstitutionalFooter = dynamic(() => import("@/components/footer/InstitutionalFooter"), { ssr: true });
-const StickyMobileConversionFooter = dynamic(() => import("@/components/footer/StickyMobileConversionFooter"), { ssr: false });
+const StickyMobileConversionFooter = dynamic(() => import("@/components/footer/StickyMobileConversionFooter"));
 
 export default function Home() {
   return (
